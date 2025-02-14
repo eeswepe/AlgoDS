@@ -103,7 +103,7 @@ The solution is implemented in Tugas3.java, and below is the screenshot of the r
 ![Third Assignment Solution](./img/Tugas3_showAll.png)
 ![Third Assignment Solution](./img/Tugas3_showByDay.png)
 ![Third Assignment Solution](./img/Tugas3_showBySemester.png)
-![Third Assignment Solution](./img/Tugas3_showByName.png)
+![Third Assignment Solution](./img/Tugas3_findByName.png)
 
 
 **Brief Explanation:** there are 7 main steps in my program 

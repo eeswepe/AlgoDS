@@ -99,16 +99,10 @@ The solution is implemented in Tugas2.java, and below is the screenshot of the r
 ### 3.3 Third Assignment
 The solution is implemented in Tugas3.java, and below is the screenshot of the result
 
-\- Input course data
 ![Third Assignment Solution](./img/Tugas3_input.png)
-\- Display all course data
 ![Third Assignment Solution](./img/Tugas3_showAll.png)
-\- Search courses by criteria
-\- By Day
 ![Third Assignment Solution](./img/Tugas3_showByDay.png)
-\- By Semester
 ![Third Assignment Solution](./img/Tugas3_showBySemester.png)
-\- By Name
 ![Third Assignment Solution](./img/Tugas3_showByName.png)
 
 

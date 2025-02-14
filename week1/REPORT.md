@@ -5,6 +5,8 @@
 | Kelas | TI - 1H |
 | Repository | [link](https://github.com/eeswepe/AlgoDS) |
 
+switch to indonesian report [link](./REPORT-ID.md)
+
 # Labs #1 Programming Fundamentals Review
 
 ## 2. Practice

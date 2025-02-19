@@ -10,12 +10,12 @@ public class DosenMain26 {
     dosen1.tampilInformasi();
     dosen1.ubahKeahlian("Basis Data");
     dosen1.tampilInformasi();
-    System.out.println(dosen1.hitungMasaKerja(2025));
+    System.out.println("Masa kerja " + dosen1.nama + " adalah " + dosen1.hitungMasaKerja(2025));
 
     Dosen26 dosen2 = new Dosen26("Dosen2", "Joko", true, 2016, "Pemrograman");
     dosen2.tampilInformasi();
     dosen2.setStatusAktif(false);
     dosen2.tampilInformasi();
-    System.out.println(dosen2.hitungMasaKerja(2025));
+    System.out.println("Masa kerja " + dosen2.nama + " adalah " + dosen2.hitungMasaKerja(2025));
   }
 }

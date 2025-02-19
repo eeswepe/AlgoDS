@@ -16,7 +16,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 #### 2.1.2 Verifikasi Hasil Percobaan
 
-//gambar verif
+![verif1](./img/verif1.png)
 
 #### 2.1.3 Pertanyaan
 
@@ -49,7 +49,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 6. Commit and push github
 
-// gambar
+![gitpush](./img/gitpush.png)
 
 ### 2.2 Instansiasi Object, serta Mengakses Atribut dan Method
 
@@ -58,7 +58,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 #### 2.2.2 Verifikasi Hasil Percobaan
 
-// gambar
+![verif2](./img/verif2.png)
 
 #### 2.2.3 Pertanyaan
 1. baris kode yang menunjukkan instansiasi adalah baris 
@@ -79,7 +79,7 @@ Pada bagian ini, ditambahkan kode untuk fungsi konstruktor. Selain itu pada clas
 
 #### 2.3.2 Verifikasi
 
-// gambar
+![verif3](./img/verif3.png)
 
 #### 2.3.3 Pertanyaan
 1. Kode baris yang menunjukkan konstruksi berparameter adalah 

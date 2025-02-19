@@ -12,7 +12,7 @@
 ### 2.1 Deklarasi Class, Atribut, dan Method
 
 #### 2.1.1 Percobaan
-Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah file java dengan nama Mahasiswa26.java yang bisa anda cek (disini)
+Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah file java dengan nama [Mahasiswa26.java](./Mahasiswa26.java) 
 
 #### 2.1.2 Verifikasi Hasil Percobaan
 
@@ -54,7 +54,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 ### 2.2 Instansiasi Object, serta Mengakses Atribut dan Method
 
 #### 2.2.1 Langkah-langkah Percobaan
-Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah file java dengan nama MahasiswaMain26.java yang bisa anda cek (disini)
+Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah file java dengan nama [MahasiswaMain26.java](./MahasiswaMain26.java)
 
 #### 2.2.2 Verifikasi Hasil Percobaan
 
@@ -102,3 +102,98 @@ Pada bagian ini, ditambahkan kode untuk fungsi konstruktor. Selain itu pada clas
     Mahasiswa26 mhsSinggih = new Mahasiswa26("Singgih Wahyu Permana", "244107020102", 4.00, "TI 1H"); 
 ```
 6. Commit and push
+
+### 2.4 Latihan Praktikum
+#### 2.4.1 Studi Kasus Mata Kuliah
+
+Dalam program ini, terdapat dua file utama, yaitu [**MataKuliah26.java**](./MataKuliah26.java) dan [**MataKuliahMain26.java**](./MataKuliahMain26.java).  
+
+#### **1. MataKuliah26.java**  
+File ini berisi deklarasi **class MataKuliah26**, yang merepresentasikan mata kuliah dengan beberapa atribut dan metode penting.  
+
+##### **Atribut**  
+Class ini memiliki empat atribut utama:  
+- **kodeMK** → Menyimpan kode unik mata kuliah.  
+- **nama** → Menyimpan nama mata kuliah.  
+- **sks** → Menyimpan jumlah Satuan Kredit Semester (SKS) dari mata kuliah.  
+- **jumlahJam** → Menyimpan jumlah jam perkuliahan dari mata kuliah.  
+
+##### **Konstruktor**  
+Terdapat dua konstruktor dalam class ini:  
+1. **Konstruktor default** → Digunakan untuk membuat objek tanpa parameter awal.  
+2. **Konstruktor dengan parameter** → Memungkinkan inisialisasi langsung dengan kode mata kuliah, nama, jumlah SKS, dan jumlah jam.  
+
+##### **Method**  
+Class ini memiliki beberapa method yang digunakan untuk mengelola data mata kuliah:  
+- **tampilInformasi()** → Menampilkan informasi lengkap dari mata kuliah.  
+- **ubahSKS(int sks)** → Mengubah jumlah SKS dari mata kuliah.  
+- **tambahJam(int jam)** → Menambahkan jumlah jam perkuliahan.  
+- **kurangiJam(int jam)** → Mengurangi jumlah jam perkuliahan, dengan pengecekan agar tidak bernilai negatif.  
+
+
+#### **2. MataKuliahMain26.java**  
+File ini berfungsi sebagai program utama yang digunakan untuk membuat dan mengelola objek **MataKuliah26**.  
+
+##### **Objek yang Dibuat**  
+Program ini mendeklarasikan **dua objek** bertipe **MataKuliah26**, masing-masing menggunakan metode inisialisasi yang berbeda:  
+1. **Objek pertama (`daspro`) menggunakan konstruktor default**, lalu nilai atributnya diatur secara manual.  
+2. **Objek kedua (`KTI`) menggunakan konstruktor dengan parameter**, sehingga nilainya langsung diatur saat objek dibuat.  
+
+##### **Operasi yang Dilakukan**  
+- Objek `daspro` (Dasar Pemrograman) dibuat dengan konstruktor default, lalu diisi dengan informasi mata kuliah secara manual. Setelah itu, informasi mata kuliah ditampilkan, jumlah jam dikurangi, jumlah SKS diperbarui, dan informasi diperiksa kembali.  
+- Objek `KTI` (Konsep Teknologi Informasi) dibuat langsung dengan konstruktor berparameter. Setelah itu, informasi mata kuliah ditampilkan, jumlah jam ditambah, dan hasilnya ditampilkan kembali.  
+
+Dengan implementasi ini, program menunjukkan bagaimana sebuah class dapat digunakan untuk merepresentasikan mata kuliah dan bagaimana data dapat dimodifikasi melalui metode yang tersedia.
+
+---
+#### 2.4.1 Studi Kasus Dosen
+
+
+Dalam program ini, terdapat dua file utama, yaitu [**Dosen26.java**](./Dosen26.java) dan [**DosenMain26.java**](./DosenMain26.java).
+
+#### **1. Dosen26.java**  
+File ini berisi deklarasi **class Dosen26**, yang merepresentasikan data seorang dosen dengan berbagai atribut dan metode yang berkaitan dengan informasi dosen.
+
+##### **Atribut**  
+Class ini memiliki lima atribut utama:  
+- **idDosen** → Menyimpan ID unik dari dosen.  
+- **nama** → Menyimpan nama dosen.  
+- **statusAktif** → Menunjukkan apakah dosen masih aktif atau tidak.  
+- **tahunBergabung** → Menyimpan tahun pertama dosen bergabung.  
+- **bidangKeahlian** → Menyimpan spesialisasi atau bidang keahlian dari dosen.  
+
+##### **Konstruktor**  
+Class ini memiliki dua konstruktor:  
+1. **Konstruktor default** → Digunakan untuk membuat objek dosen tanpa parameter awal.  
+2. **Konstruktor dengan parameter** → Memungkinkan inisialisasi objek dengan ID dosen, nama, status aktif, tahun bergabung, dan bidang keahlian secara langsung.  
+
+##### **Metode**  
+Class ini memiliki beberapa metode untuk mengelola data dosen:  
+- **tampilInformasi()** → Menampilkan informasi lengkap mengenai dosen.  
+- **setStatusAktif(boolean statusAktif)** → Mengubah status keaktifan dosen dan menampilkan perubahan status.  
+- **hitungMasaKerja(int thnSkrg)** → Menghitung masa kerja dosen berdasarkan tahun saat ini.  
+- **ubahKeahlian(String bidang)** → Mengubah bidang keahlian dari dosen dan menampilkan perubahan yang terjadi.  
+
+
+
+#### **2. DosenMain26.java**  
+File ini berfungsi sebagai program utama yang digunakan untuk membuat dan mengelola objek **Dosen26**.
+
+##### **Objek yang Dibuat**  
+Program ini mendeklarasikan **dua objek** bertipe **Dosen26**, dengan metode inisialisasi yang berbeda:  
+1. **Objek pertama (`dosen1`) menggunakan konstruktor default**, lalu nilai atributnya diatur secara manual.  
+2. **Objek kedua (`dosen2`) menggunakan konstruktor dengan parameter**, sehingga nilai atributnya langsung diatur saat objek dibuat.  
+
+##### **Operasi yang Dilakukan**  
+- Objek `dosen1` dibuat dengan konstruktor default, kemudian diberikan informasi seperti ID, nama, status keaktifan, tahun bergabung, dan bidang keahlian secara manual.  
+  - Informasi dosen ditampilkan.  
+  - Bidang keahlian diubah.  
+  - Informasi dosen ditampilkan kembali setelah perubahan.  
+  - Masa kerja dihitung berdasarkan tahun 2025.  
+- Objek `dosen2` dibuat menggunakan konstruktor berparameter dan langsung diisi dengan informasi awal.  
+  - Informasi dosen ditampilkan.  
+  - Status aktif dosen diubah menjadi **Tidak Aktif**.  
+  - Informasi dosen ditampilkan kembali setelah perubahan.  
+  - Masa kerja dihitung berdasarkan tahun 2025.  
+
+Dengan implementasi ini, program menunjukkan bagaimana sebuah class dapat digunakan untuk merepresentasikan seorang dosen, serta bagaimana data dapat dimodifikasi melalui metode yang tersedia.

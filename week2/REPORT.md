@@ -16,7 +16,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 #### 2.1.2 Verifikasi Hasil Percobaan
 
-![verif1](../week2/img/verif1.png)
+//gambar verif
 
 #### 2.1.3 Pertanyaan
 
@@ -49,7 +49,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 6. Commit and push github
 
-![gitpush](../week2/img/gitpush.png)
+// gambar
 
 ### 2.2 Instansiasi Object, serta Mengakses Atribut dan Method
 
@@ -58,7 +58,7 @@ Setelah menyelesaikan seluruh tahapan seperti pada contoh, dihasilkan sebuah fil
 
 #### 2.2.2 Verifikasi Hasil Percobaan
 
-![verif2](../week2/img/verif2.png)
+// gambar
 
 #### 2.2.3 Pertanyaan
 1. baris kode yang menunjukkan instansiasi adalah baris 
@@ -75,4 +75,30 @@ dimana kode tersebut akan menghasilkan object yang bernama mhs1
 
 #### 2.3.1 Langkah-langkah Percobaan
 
+Pada bagian ini, ditambahkan kode untuk fungsi konstruktor. Selain itu pada class MahasiswaMain26, kita membuat lagi sebuah object baru bernama mhs2 dengan menggunakan fungsi konstruktor yang sudah dibuat sebelumnya
 
+#### 2.3.2 Verifikasi
+
+// gambar
+
+#### 2.3.3 Pertanyaan
+1. Kode baris yang menunjukkan konstruksi berparameter adalah 
+``` java
+  public Mahasiswa26(String nama, String nim, double ipk, String kelas) {
+    this.nama = nama;
+    this.nim = nim;
+    this.ipk = ipk;
+    this.kelas = kelas;
+  }
+```
+2. Pada baris tersebut, yang terjadi adalah kita membuat object baru dengan nama mhs2, dimana setiap atribut pada mhs2 diisikan secara langsung dengan memanggil fungsi konstruktor yang berparameter
+
+3. Saat konstruktor default dihapus, maka terjadi error saat menjalankan program, hal ini karena pada saat kita membuat object mhs1 kita tidak mengisikan parameter untuk fungsi konstruktornya. kenapa sebelumnya berhasil, karena sebelumnya konstruktor yang dipakai adalah konstruktor default, ketika konstruktor default dihapus dan digantikan dengan konstruktor yang memiliki parameter, maka konstruktor yang memiliki parameterlah yang menjadi konstruktor default
+
+4. Tidak, method didalam object bisa dipanggil kapan saja dengan urutan apa saja
+
+5. Object baru mhsSinggih dibuat dengan kode
+``` java
+    Mahasiswa26 mhsSinggih = new Mahasiswa26("Singgih Wahyu Permana", "244107020102", 4.00, "TI 1H"); 
+```
+6. Commit and push

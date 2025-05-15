@@ -1,5 +1,3 @@
-// ini file supaya saya ga keseringan input lewat Scanner pak, soalnya udah ngetik 3 kali manual ada
-// aja yang kelewat
 public class TestFile {
   public static void main(String[] args) {
     AntrianKRS antrian = new AntrianKRS();
@@ -47,3 +45,5 @@ public class TestFile {
     antrian.tampilkanSemua();
   }
 }
+// ini file supaya saya ga keseringan input lewat Scanner pak, soalnya udah ngetik 3 kali manual ada
+// aja yang kelewat

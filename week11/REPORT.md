@@ -73,6 +73,8 @@ dan
 
 ## 2.3 Tugas
 
+---
+
 ### **Laporan Praktikum**
 
 ---

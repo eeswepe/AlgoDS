@@ -66,7 +66,7 @@ public class SLLMain26 {
     String kelas = sc.nextLine();
     System.out.print("IPK: ");
     double ipk = sc.nextDouble();
-    sc.nextLine(); // buang newline
+    sc.nextLine();
     return new Mahasiswa26(nim, nama, kelas, ipk);
   }
 }

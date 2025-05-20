@@ -30,3 +30,22 @@
 
 ## Tugas
 
+Dihasilkan 4 file utama dalam program ini, yaitu:
+
+- [Antrian.java](./Antrian.java)
+- [AntrianMain.java](./AntrianMain.java)
+- [AntrianTest.java](./AntrianTest.java)
+- [MhsAntri.java](./MhsAntri.java)
+
+Di dalam file [Antrian.java](./Antrian.java), adalah class yang menangani antrian mahasiswa.
+
+Di dalam file [AntrianMain.java](./AntrianMain.java), adalah class yang menangani inputan dari user, dan menampilkan output ke layar.
+
+Di dalam file [AntrianTest.java](./AntrianTest.java), adalah class yang menjalankan test dari antrian mahasiswa.
+
+Di dalam file [MhsAntri.java](./MhsAntri.java), adalah class yang menangani data mahasiswa.
+
+Setelah melakukan pengujian setiap fitur menggunakan file [AntrianTest.java](./AntrianTest.java), program menghasilkan output sesuai dengan yang diharapkan. berikut adalah hasil running dari [AntrianTest.java](./AntrianTest.java)
+
+![tugas](./img/tugas-1.png)
+![tugas](./img/tugas-2.png)

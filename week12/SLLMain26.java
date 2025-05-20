@@ -16,7 +16,7 @@ public class SLLMain26 {
       System.out.println("6. Keluar");
       System.out.print("Pilih: ");
       pilihan = sc.nextInt();
-      sc.nextLine(); // buang newline
+      sc.nextLine();
 
       switch (pilihan) {
         case 1:
@@ -57,7 +57,6 @@ public class SLLMain26 {
     } while (pilihan != 6);
   }
 
-  // Fungsi bantu untuk input data mahasiswa
   public static Mahasiswa26 inputMahasiswa(Scanner sc) {
     System.out.print("NIM: ");
     String nim = sc.nextLine();

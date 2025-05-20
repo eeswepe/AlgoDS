@@ -39,7 +39,7 @@ public class SLLMain26 {
         case 4:
           System.out.print("Masukkan index: ");
           int idx = sc.nextInt();
-          sc.nextLine(); // buang newline
+          sc.nextLine();
           Mahasiswa26 mhsIndex = inputMahasiswa(sc);
           sll.insertAt(idx, mhsIndex);
           System.out.println("Data berhasil ditambahkan di index " + idx);

@@ -21,6 +21,29 @@ public class DoubleLinkedList26 {
     return head == null;
   }
 
+  public Node26 getFirst() {
+    return head;
+  }
+
+  public Node26 getLast() {
+    return tail;
+  }
+
+  public Node26 getIndex(int index) {
+    if (index < 0 || index > getSize()) {
+      System.out.println("Indeks tidak valid");
+      return null;
+    }
+
+    Node26 current = head;
+    int i = 1;
+    while (current != null && i < index) {
+      current = current.next;
+      i++;
+    }
+    return current;
+  }
+
   public void add(Mahasiswa26 item, int index) {
     if (index < 0 || index > getSize()) {
       System.out.println("Indeks tidak valid");
@@ -63,6 +86,72 @@ public class DoubleLinkedList26 {
     if (current == head) {
       head = newNode;
     }
+  }
+
+  public void removeAfter(String keyNIM) {
+    Node26 current = head;
+
+    while (current != null && !current.data.nim.equals(keyNIM)) {
+      current = current.next;
+    }
+
+    if (current == null) {
+      System.out.println("Node dengan NIM " + keyNIM + " tidak ditemukan");
+      return;
+    }
+
+    if (current == tail) {
+      tail = current.prev;
+      tail.next = null;
+      System.out.println("Data yang dihapus: " + tail.data.tampil());
+      return;
+    }
+
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+
+    System.out.println("Data yang dihapus: " + current.data.tampil());
+  }
+
+  public void remove(int index) {
+    if (index < 0 || index > getSize()) {
+      System.out.println("Indeks tidak valid");
+      return;
+    }
+
+    if (index == 0) {
+      removeFirst();
+      return;
+    }
+
+    if (index == getSize()) {
+      removeLast();
+      return;
+    }
+
+    Node26 current = head;
+    int i = 1;
+    while (current != null && i < index) {
+      current = current.next;
+      i++;
+    }
+
+    if (current == null) {
+      System.out.println("Indeks tidak ditemukan");
+      return;
+    }
+
+    if (current == head) {
+      head = current.next;
+      head.prev = null;
+      System.out.println("Data yang dihapus: " + head.data.tampil());
+      return;
+    }
+
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+
+    System.out.println("Data yang dihapus: " + current.data.tampil());
   }
 
   public void addFirst(Mahasiswa26 data) {

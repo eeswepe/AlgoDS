@@ -9,7 +9,7 @@
 
 ## Praktikum
 
-### 12.2.1 Verifikasi Hasil Percobaan 
+### 12.2.1 Verifikasi Hasil Percobaan 1 dan 2
 
 ![percobaan1-1](./img/percobaan1-1.png)
 ![percobaan1-2](./img/percobaan1-2.png)
@@ -78,3 +78,169 @@ Doubly linked list memiliki dua arah karena tiap node menyimpan pointer ke node 
 ```
 
 
+### Tugas Praktikum
+
+
+1. Penambahan fungsi add() untuk menambahkan data pada indes tertentu
+
+```java
+  public void add(Mahasiswa26 item, int index) {
+    if (index < 0 || index > getSize()) {
+      System.out.println("Indeks tidak valid");
+      return;
+    }
+
+    if (index == 0) {
+      addFirst(item);
+      return;
+    }
+
+    if (index == getSize()) {
+      addLast(item);
+      return;
+    }
+
+    Node26 current = head;
+    int i = 1;
+    while (current != null && i < index) {
+      current = current.next;
+      i++;
+    }
+
+    if (current == null) {
+      System.out.println("Indeks tidak ditemukan");
+      return;
+    }
+
+    Node26 newNode = new Node26(item);
+
+    newNode.prev = current.prev;
+    newNode.next = current;
+
+    if (current.prev != null) {
+      current.prev.next = newNode;
+    }
+
+    current.prev = newNode;
+
+    if (current == head) {
+      head = newNode;
+    }
+  }
+```
+
+2. Penambahan fungsi removeAfter() untuk menghapus data setelah NIM tertentu
+
+```java
+  public void removeAfter(String keyNIM) {
+    Node26 current = head;
+
+    while (current != null && !current.data.nim.equals(keyNIM)) {
+      current = current.next;
+    }
+
+    if (current == null) {
+      System.out.println("Node dengan NIM " + keyNIM + " tidak ditemukan");
+      return;
+    }
+
+    if (current == tail) {
+      tail = current.prev;
+      tail.next = null;
+      System.out.println("Data yang dihapus: " + tail.data.tampil());
+      return;
+    }
+
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+
+    System.out.println("Data yang dihapus: " + current.data.tampil());
+  }
+
+```
+
+3. Penambahan fungsi remove() untuk menghapus data pada indeks tertentu
+
+```java
+  public void remove(int index) {
+    if (index < 0 || index > getSize()) {
+      System.out.println("Indeks tidak valid");
+      return;
+    }
+
+    if (index == 0) {
+      removeFirst();
+      return;
+    }
+
+    if (index == getSize()) {
+      removeLast();
+      return;
+    }
+
+    Node26 current = head;
+    int i = 1;
+    while (current != null && i < index) {
+      current = current.next;
+      i++;
+    }
+
+    if (current == null) {
+      System.out.println("Indeks tidak ditemukan");
+      return;
+    }
+
+    if (current == head) {
+      head = current.next;
+      head.prev = null;
+      System.out.println("Data yang dihapus: " + head.data.tampil());
+      return;
+    }
+
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+
+    System.out.println("Data yang dihapus: " + current.data.tampil());
+  }
+```
+
+4. Penambahan fungsi getFirst(), getLast(), dan getIndex() untuk mengambil data pada indeks tertentu
+
+```java
+  public Node26 getFirst() {
+    return head;
+  }
+
+  public Node26 getLast() {
+    return tail;
+  }
+
+  public Node26 getIndex(int index) {
+    if (index < 0 || index > getSize()) {
+      System.out.println("Indeks tidak valid");
+      return null;
+    }
+
+    Node26 current = head;
+    int i = 1;
+    while (current != null && i < index) {
+      current = current.next;
+      i++;
+    }
+    return current;
+  }
+```
+
+5. Penambahan fungsi untuk membaca size saat ini dari linked list
+
+```java
+  public int getSize() {
+    Node26 current = head;
+    int size = 0;
+    while (current != null) {
+      current = current.next;
+      size++;
+    }
+    return size;
+  }
+```
